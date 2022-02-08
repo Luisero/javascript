@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #05FF76;
+    font-weight: bold;
+    height: 55px;
+    align-items: center;
+    display: flex;
+}
+header > h1{
+    color: white;
+    margin: 0 10px;
+}
+p{
+    color: white;
+}
+/*section #52FFA0*/
+section{
+    margin: 20px auto;
+    align-items: center;
+    width: 60vw;
+    height: 50vh;
+    background-image: linear-gradient(to left, #3DBF78, #52FFA0);
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.274);
+}
+
+input#txt-number{
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #05FF76;
+}
+
+select{
+    outline: none;
+    border-color: #50c283;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 10vw;
+    height: 5vh;
+    
+}
+option {
+    background-color: white;
+    color: #22864f;
+    font-weight: bold;
+    
+}
+
+option *{
+    padding: 10px   ;
+}
+
+#btn-gerar{
+    padding: 5px 10px;
+    border-color: #25d875;
+    border-style: solid;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 10vw;
+    height: 5vh;
+    transition-duration: .4s;
+}
+
+#btn-gerar:hover{
+    background-color: #30f588;
+    transition-duration: .4s;
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+footer > p {
+    font-weight: bold;
+    margin: auto;
+    color: #26ac62;
+}

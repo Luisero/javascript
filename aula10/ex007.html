@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            font: normal 1em 'Arial';
+        }
+        input{
+            font: normal 1em 'Arial';
+            width: 100px;
+            border-color: rgb(0, 153, 255);
+            border-style:solid ;
+            border-radius: 5px;
+        }
+        input#btn-soma{
+            background-color: rgb(0, 153, 255) ;
+            color: white;
+            transition-duration: 0.5s;
+        }
+        input#btn-soma:active{
+            background-color: rgb(3, 128, 211);
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input id="btn-soma" type="button" value="Somar" onclick="somar()" >
+    <h2>Resultado:</h2>
+    <p id="res"></p>
+    
+    <script>
+        var btn = document.getElementById('btn-soma')
+        btn.addEventListener('mouseover', mousein)
+        btn.addEventListener('mouseout', mouseout)
+
+        function mouseout(){
+            btn.style.backgroundColor = 'rgb(0, 153, 255)'
+            btn.style.color = 'white'
+        }
+
+        function mousein(){
+            btn.style.backgroundColor = 'white'
+            btn.style.color = 'rgb(0, 153, 255)'
+        }
+        function somar(){
+            var txtn1 = document.getElementById('txtn1')
+            var txtn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+
+            var soma = n1 + n2
+            res.innerHTML = `A soma entre <em>${n1}</em> e <em>${n2}</em> é <strong>${soma}</strog>`
+        }
+    </script>
+</body>
+</html>

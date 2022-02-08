@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body{
+   margin: 0;
+    background-image:  linear-gradient(to right, rgb(29, 167, 209), rgb(56, 185, 224));
+    color:rgb(209, 215, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    display: flex;
+    text-align: center;
+    padding-left: 20px;
+}
+
+section{
+    background-color: rgb(209, 215, 216);
+    width: 600px;
+    min-height: 400px;
+    max-height: 100%;
+    margin: 20px auto;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.308);
+    
+}
+
+#buttons{
+    display: flex;
+}
+
+#btnAdicionar, #btnFinalizar{
+    margin: 0px  10px 0px 0px;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: solid;
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#btnAdicionar{
+    border-color: rgb(29, 167, 209);
+    color: rgb(29, 167, 209);
+}
+
+#btnFinalizar{
+    border-color: rgb(29, 167, 209);
+    background-color: rgb(29, 167, 209);
+    color: white;
+    margin-left: 85px;
+}
+
+#selectNumbers{
+    display: block;
+}
+
+#txtNumbers, select{
+    background-color: rgb(209, 215, 216);
+    border-style: solid;
+    border-color: rgb(29, 167, 209);
+   
+}
+
+#txtNumbers{
+    height: 30px;
+    width: 73px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+select{
+    width: 80px;
+    
+    margin: 10px 10px 10px 0px;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+select:active{
+    border-color: rgb(31, 139, 172);
+}
+#res{
+   font-size: 1.1em;
+}

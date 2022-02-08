@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular nota</title>
+</head>
+<body>
+    <header>
+        <h1>Calcular nota</h1>
+        <nav>
+            <ul>
+                <li><a href="sobre.html" rel="next">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="inputNotas">
+            <p>Digite a nota 1: <input type="number" name="txtNota1" id="txtNota1"></p>
+            <p>Digite a nota 2: <input type="number" name="txtNota2" id="txtNota2"></p>
+            <p>Digite a nota 3: <input type="number" name="txtNota3" id="txtNota3"></p>
+            <p>Digite a nota 4: <input type="number" name="txtNota4" id="txtNota4"></p>
+            <input type="button" value="Calcular" id="btnCalcular" onclick="calcular()">
+        </div>
+        <div id="outputRes">
+            <p id="calc"></p>
+            <p id="res"></p>
+        </div>
+    </main>
+    <footer>
+      
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

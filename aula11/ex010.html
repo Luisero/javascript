@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #btn , #txt-vel{
+            padding: 5px 10px;
+            border-style: solid;
+            border-radius: 6px;
+            border-color: rgb(0, 119, 255);
+            color: rgb(0, 119, 255);
+            transition-duration: .5s;
+        }
+        #btn{
+            width: 90px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <h2>Digite sua velocidade:</h2>
+    <input type="number" name="vel" id="txt-vel" >
+    <input type="button" value="Confirmar" id='btn' onclick="verificar()" >
+    <p id='atual-vel'></p>
+    <p id='multa'></p>
+    <p id='msg-cinto'></p>
+
+    <script>
+        
+        var btn = document.querySelector('#btn')
+
+        btn.addEventListener('mouseover', mouseover)
+        btn.addEventListener('mouseout', mouseout)
+
+        function mouseover()
+        {
+            btn.style.width = '100px'
+            btn.style.backgroundColor = 'rgb(0, 119, 255)'
+            btn.style.color = 'white'
+        }
+
+        function mouseout()
+        {
+            btn.style.width = '90px'
+            btn.style.backgroundColor = 'white'
+            btn.style.color = 'rgb(0, 119, 255)'
+        }
+
+        
+
+        function verificar()
+        {
+            var atualVel = document.getElementById('atual-vel')
+            var multa = document.querySelector('#multa')
+            var msg = document.querySelector('#msg-cinto')
+            var vel = document.getElementById('txt-vel')
+            vel = vel.value 
+            atualVel.innerText = `A sua velocidade é de ${vel} Km/h.`
+            if(vel > 60)
+            {
+               multa.innerHTML = '<p>Você ultrapassou os limites da via. <strong>MULTADO!</strong></p>'
+            }
+            else{
+                multa.innerHTML = '<p> </p>'
+            }    
+            msg.innerHTML = 'Use sempre o <strong>cinto de segurança</strong>'
+        }
+    </script>
+</body>
+</html>

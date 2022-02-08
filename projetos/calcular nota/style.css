@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor1: #00A83B;
+    --cor2: #39f59d;
+    --cor3: rgb(8, 238, 88);
+    --cor4: #F50800;
+    --cor5: #bcf0da;
+}
+
+body{
+    background-color: var(--cor5);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* header */
+header{
+    display: flex;
+    background-color: var(--cor3);
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    color: white;
+}
+
+header > h1{
+    margin: 0;
+}
+
+nav>ul{
+    list-style: none;
+}
+
+nav> ul > li{
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    transition-duration: .5s;
+}
+nav > ul > li:hover{
+    background-color: #3db667;
+    transition-duration: .5s;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+
+}
+/* main */
+main{
+    font-weight: bold;
+    margin: 20px auto;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+    max-width: 60vw;
+    min-width: 280px;
+    max-height: 100%;
+    min-height: 30vh;
+    padding: 10px;
+    border-radius: 15px;
+}
+#txtNota1, #txtNota2, #txtNota3, #txtNota4, #inputAf{
+    background-color: var(--cor5);
+    outline: none;
+    border-color: rgb(45, 151, 82);
+    border-style: solid;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#btnCalcular, #btnConfirmAf{
+    height: 40px;
+    width: 90px;
+    background-color: var(--cor2);
+    border-style: solid;
+    border-color: rgb(45, 151, 82);
+    font-weight: bolder;
+    font-family: 'Roboto';
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+#btnCalcular:hover, #btnConfirmAf:hover{
+    background-image: linear-gradient(to right, var(--cor2), #33bd7c );
+}
+

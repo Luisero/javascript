@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <h2>De qual país você é?</h2>
+    <input type="text" name="txt-pais" id="txt-pais">
+    <input type="button" value="Confirmar" id='btn'>
+    <p id="res"></p>
+</body>
+<script>
+    
+    var btn = document.querySelector('#btn')
+    btn.addEventListener('click', checar)
+
+    function checar()
+    {
+        var res = document.querySelector('#res')
+        var txtPais = document.querySelector('#txt-pais')
+        txtPais = txtPais.value
+        if(txtPais == 'Brasil' || txtPais == 'brasil')
+        {
+            res.innerHTML = '<p>Você é brasileiro.'
+        }
+        else
+        {
+            res.innerHTML = '<p>Você é gringo.'
+        }
+    }
+</script>
+</html>
